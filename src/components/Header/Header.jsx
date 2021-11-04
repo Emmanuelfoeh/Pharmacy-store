@@ -9,7 +9,7 @@ const classes = useStyle()
     return (
       <AppBar position="static" color="transparent" className={classes.header}>
         <Toolbar className={classes.toolbar}>
-          <Typography variant="h" className={classes.title}>
+          <Typography variant="h" className={classes.logo}>
             PHARMACY
           </Typography>
 

@@ -8,6 +8,10 @@ export default makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
   },
+  logo:{
+      fontWeight:'bold',
+      fontFamily: 'Roboto',
+  },
   navbar: {
     display: "flex",
     justifyContent: "space-between",
