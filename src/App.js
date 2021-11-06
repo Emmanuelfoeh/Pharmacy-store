@@ -1,5 +1,6 @@
 
 import Entry from './Entry';
+import './App.css';
 
 function App() {
 	return (

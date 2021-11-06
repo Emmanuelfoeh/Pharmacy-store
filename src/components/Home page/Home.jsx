@@ -16,24 +16,117 @@ const Home = () => {
             <Typography display="inline" variant="h5">
               NEED AMBULANCE?
             </Typography>
+            <Typography fontSize="2rem">555-789-345</Typography>
           </div>
           <div>
-             <Typography fontSize="5rem" variant="1">STAY HOME, STAY SAFE!</Typography>
-          <p>
-            Purchase medication from legitimate websites online. Search for a
-            site to see if it is safe or not recommended. Join 8,405 of happy
-            customers from the USA who give us a 99% satisfaction rate. They
-            talk about
-          </p>
-          <Button color="primary">UPLOAD PRESCRIPTION</Button>
+            <Typography fontSize="5rem" variant="1">
+              STAY HOME, STAY SAFE!
+            </Typography>
+            <Typography fontSize="0.8rem" width="80%">
+              Purchase medication from legitimate websites online. Search for a
+              site to see if it is safe or not recommended. Join 8,405 of happy
+              customers from the USA who give us a 99% satisfaction rate. They
+              talk about
+            </Typography>
+            <Button variant="contained" color="primary">
+              UPLOAD PRESCRIPTION
+            </Button>
           </div>
-         
         </div>
-        <div>second section</div>
+        {/* second section in the introductiom */}
+        <div className={classes.intro_section_img}>
+          <div className={classes.bigBall}></div>
+          <div className={classes.smallBall}></div>
+          <div className={classes.sideBall}></div>
+          <div className={classes.hero_img}>
+            <img
+              className={classes.heroImg}
+              src="img/hero-img.jpg"
+              alt="hero-img"
+            />
+          </div>
+        </div>
       </section>
 
+      {/* Service section */}
       <section className={classes.services}>
-        thi is the services section
+        <div className={classes.services_box}>
+          <div className={classes.col1}>
+            <div
+              style={{ backgroundColor: "#FF8F87" }}
+              className={classes.boxItem}
+            >
+              <img src="img/icon-medication.svg" alt="first aid kit" />
+              <Typography mt={1} variant="h5">
+                Online Pharmacy
+              </Typography>
+              <Typography mt={2} component="p">
+                Small river named Duden flows by their place and supplies
+              </Typography>
+            </div>
+            <div
+              style={{ backgroundColor: "#756EEF" }}
+              className={classes.boxItem}
+            >
+              <img src="img/icon-heart.svg" alt="first aid kit" />
+              <Typography mt={1} variant="h5">
+                Doctor's Advise
+              </Typography>
+              <Typography mt={2} component="p">
+                Small river named Duden flows by their place and supplies
+              </Typography>
+            </div>
+          </div>
+          <div className={classes.col2}>
+            <div
+              style={{ backgroundColor: "#2EEBEE" }}
+              className={classes.boxItem}
+            >
+              {" "}
+              <img src="img/icon-vaccine.svg" alt="first aid kit" />
+              <Typography mt={1} variant="h5">
+                Covid-19 Vaccine
+              </Typography>
+              <Typography mt={2} component="p">
+                Small river named Duden flows by their place and supplies
+              </Typography>
+            </div>
+            <div
+              style={{ backgroundColor: "#FEB517" }}
+              className={classes.boxItem}
+            >
+              <img src="img/icon-first-aid-kit.svg" alt="first aid kit" />
+              <Typography mt={1} variant="h5">
+                General Health
+              </Typography>
+              <Typography mt={2} component="p">
+                Small river named Duden flows by their place and supplies
+              </Typography>
+            </div>
+          </div>
+        </div>
+
+        <div className={classes.service_text}>
+          <Typography variant="h5" color="#FF8F87" fontSize="1 rem">
+            24/7 SERVICE
+          </Typography>
+          <Typography
+            color="#1C416B"
+            fontSize="3rem"
+            fontWeight="bold"
+            width="70%"
+            variant="h4"
+          >
+            The Allrounder Pharmacy Store
+          </Typography>
+          <Typography color="#B2BCC6" fontSize="1.3rem" component="p">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean. A small river named Duden flows by their place and
+            supplies it with the necessary regelialia.
+          </Typography>
+        </div>
       </section>
       <section className={classes.medicine}>The medicine section</section>
       <section className={classes.about}>this is the about section</section>
