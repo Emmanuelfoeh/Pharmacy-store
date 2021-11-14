@@ -87,15 +87,15 @@ export default makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     padding: "2rem 1rem",
-    borderRadius:'1rem',
+    borderRadius: "1rem",
     // rowGap:'1rem',
     // backgr/oundColor: "#10BFC1",
     textAlign: "center",
 
-    "& img":{width:'3rem',
-            // marginBottom: '1rem',
-}
-
+    "& img": {
+      width: "3rem",
+      // marginBottom: '1rem',
+    },
   },
   "col1,col2": {
     display: "flex",
@@ -120,5 +120,118 @@ export default makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+  },
+  // medicine section
+  medicine: {},
+  medicine_header: {
+    display: "flex",
+    justifyContent: "space-between",
+    "& h1": { fontSize: "3rem" },
+    marginBottom: "0.5rem",
+  },
+  buttonView: {
+    borderRadius: "4rem !important",
+    padding: "0 2rem !important",
+  },
+  horizontal_line: {
+    width: "99%",
+    margin: "0 auto",
+  },
+  medicine_card: {
+    display: "flex",
+    justifyContent: "center",
+    gap: "1.9rem",
+    padding: "2rem",
+  },
+  card1: {
+    display: "flex",
+    flexDirection: "column",
+    position: "relative",
+    alignItems: "center",
+    padding: "2rem",
+    backgroundColor: "#FEF3F1 !important",
+    position: "relative",
+    transition: "transform 100ms ease-in",
+
+    "& img": {
+      width: "60%",
+      margin: "0 auto",
+      position: "absolute",
+      top: "0.8rem",
+    },
+
+    "&:hover": {
+      transform: "scale(1.07)",
+      boxShadow: "0px 6px 18px -9px rgba(0,0,0,0.75)",
+    },
+  },
+  card2: {
+    display: "flex",
+    flexDirection: "column",
+    position: "relative",
+    alignItems: "center",
+    padding: "2rem",
+    backgroundColor: "#FDFAEB !important",
+    position: "relative",
+    transition: "transform 100ms ease-in",
+
+    "& img": {
+      width: "60%",
+      margin: "0 auto",
+      position: "absolute",
+      top: "0.8rem",
+    },
+    "&:hover": {
+      transform: "scale(1.07)",
+      boxShadow: "0px 6px 18px -9px rgba(0,0,0,0.75)",
+    },
+  },
+  card3: {
+    display: "flex",
+    flexDirection: "column",
+    position: "relative",
+    alignItems: "center",
+    padding: "2rem",
+    backgroundColor: "#EDEFFC !important",
+    transition: "transform 100ms ease-in",
+    position: "relative",
+
+    "& img": {
+      width: "60%",
+      margin: "0 auto",
+      position: "absolute",
+      top: "0.8rem",
+    },
+    "&:hover": {
+      transform: "scale(1.07)",
+      boxShadow: "0px 6px 18px -9px rgba(0,0,0,0.75)",
+    },
+  },
+  circle: {
+    width: "9rem",
+    height: "9rem",
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "1rem",
+    backgroundColor: "#FDC0BB",
+    borderRadius: "50%",
+  },
+  circle2: {
+    width: "9rem",
+    height: "9rem",
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "1rem",
+    backgroundColor: "#FDE8B1",
+    borderRadius: "50%",
+  },
+  circle3: {
+    width: "9rem",
+    height: "9rem",
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "1rem",
+    backgroundColor: "#AEACF7",
+    borderRadius: "50%",
   },
 }));
