@@ -87,15 +87,15 @@ export default makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     padding: "2rem 1rem",
-    borderRadius:'1rem',
+    borderRadius: "1rem",
     // rowGap:'1rem',
     // backgr/oundColor: "#10BFC1",
     textAlign: "center",
 
-    "& img":{width:'3rem',
-            // marginBottom: '1rem',
-}
-
+    "& img": {
+      width: "3rem",
+      // marginBottom: '1rem',
+    },
   },
   "col1,col2": {
     display: "flex",
@@ -120,5 +120,75 @@ export default makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+  },
+  // medicine section
+  medicine: {},
+  medicine_header: {
+    display: "flex",
+    justifyContent: "space-between",
+    "& h1": { fontSize: "3rem" },
+    marginBottom: "0.5rem",
+  },
+  buttonView: {
+    borderRadius: "4rem !important",
+    padding: "0 2rem !important",
+  },
+  horizontal_line: {
+    width: "99%",
+    margin: "0 auto",
+  },
+  medicine_card: {
+    display: "flex",
+    justifyContent: "center",
+    gap: "1.5rem",
+    padding: "2rem",
+    
+  },
+  card1: {
+    display: "flex",
+    flexDirection: "column",
+    position: "relative",
+    alignItems: "center",
+    padding: "2rem",
+    backgroundColor: "#FDE7E4 !important",
+    position: "relative",
+    transition: "all 5s ease",
+
+    "& img": { width: "60%", margin: "0 auto",position: "absolute" ,top:'0.8rem'},
+
+    "&:hover":{transform: 'scale(0.8) !important'},
+
+  },
+  card2: {
+    display: "flex",
+    flexDirection: "column",
+    position: "relative",
+    alignItems: "center",
+    padding: "2rem",
+    backgroundColor: "#FDE7E4 !important",
+    position: "relative",
+
+    "& img": { width: "60%", margin: "0 auto",position: "absolute" ,top:'0.8rem'},
+
+  },
+  card3: {
+    display: "flex",
+    flexDirection: "column",
+    position: "relative",
+    alignItems: "center",
+    padding: "2rem",
+    backgroundColor: "#FDE7E4 !important",
+    position: "relative",
+
+    "& img": { width: "60%", margin: "0 auto",position: "absolute" ,top:'0.8rem'},
+
+  },
+  circle: {
+    width: "9rem", height:'9rem',
+    display:'flex',
+    justifyContent: 'center',
+    marginTop:'1rem',
+    backgroundColor: "red",
+    borderRadius: "50%",
   },
 }));

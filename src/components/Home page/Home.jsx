@@ -1,4 +1,4 @@
-import { Button, Typography } from '@mui/material';
+import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
 import React from 'react';
 
 import useStyle from './style';
@@ -28,7 +28,11 @@ const Home = () => {
               customers from the USA who give us a 99% satisfaction rate. They
               talk about
             </Typography>
-            <Button variant="contained" color="primary">
+            <Button
+              className={classes.buttonView}
+              variant="contained"
+              color="primary"
+            >
               UPLOAD PRESCRIPTION
             </Button>
           </div>
@@ -128,7 +132,122 @@ const Home = () => {
           </Typography>
         </div>
       </section>
-      <section className={classes.medicine}>The medicine section</section>
+      <section className={classes.medicine}>
+        <div className={classes.medicine_header}>
+          <Typography variant="h1">Popular Medicine</Typography>
+          <Button
+            className={classes.buttonView}
+            variant="contained"
+            color="primary"
+          >
+            view all
+          </Button>
+        </div>
+        <hr className={classes.horizontal_line} />
+
+        <div className={classes.medicine_card}>
+          <Card className={classes.card1} sx={{ maxWidth: 350 }}>
+
+            <div className={classes.circle}>
+              
+            </div>
+            <img src="\img\popular-medicine1.png" alt="medicine" />
+            <CardContent>
+              <Typography
+                textAlign="center"
+                marginTop='2rem'
+                gutterBottom
+                variant="h5"
+                component="div"
+              >
+                Aspirin
+              </Typography>
+              <Typography
+                textAlign="center"
+                variant="body2"
+                color="text.secondary"
+              >
+                Lizards lorem rem
+              </Typography>
+              <Typography
+                textAlign="center"
+                variant="h5"
+                color="text.secondary"
+                fontSize="1rem"
+              >
+                $25/30 Pieces
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card className={classes.card2} sx={{ maxWidth: 350 }}>
+
+            <div className={classes.circle}>
+              
+            </div>
+            <img src="\img\popular-medicine2.png" alt="medicine" />
+            <CardContent>
+              <Typography
+                textAlign="center"
+                marginTop='2rem'
+                gutterBottom
+                variant="h5"
+                component="div"
+              >
+                Aspirin
+              </Typography>
+              <Typography
+                textAlign="center"
+                variant="body2"
+                color="text.secondary"
+              >
+                Lizards lorem rem
+              </Typography>
+              <Typography
+                textAlign="center"
+                variant="h5"
+                color="text.secondary"
+                fontSize="1rem"
+              >
+                $25/30 Pieces
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card className={classes.card3} sx={{ maxWidth: 350 }}>
+
+            <div className={classes.circle}>
+              
+            </div>
+            <img src="\img\popular-medicine3.png" alt="medicine" />
+            <CardContent>
+              <Typography
+                textAlign="center"
+                marginTop='2rem'
+                gutterBottom
+                variant="h5"
+                component="div"
+              >
+                Aspirin
+              </Typography>
+              <Typography
+                textAlign="center"
+                variant="body2"
+                color="text.secondary"
+              >
+                Lizards lorem rem
+              </Typography>
+              <Typography
+                textAlign="center"
+                variant="h5"
+                color="text.secondary"
+                fontSize="1rem"
+              >
+                $25/30 Pieces
+              </Typography>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       <section className={classes.about}>this is the about section</section>
 
       <section className={classes.medicine_serve}>
