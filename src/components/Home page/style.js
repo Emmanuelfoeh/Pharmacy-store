@@ -140,9 +140,8 @@ export default makeStyles((theme) => ({
   medicine_card: {
     display: "flex",
     justifyContent: "center",
-    gap: "1.5rem",
+    gap: "1.9rem",
     padding: "2rem",
-    
   },
   card1: {
     display: "flex",
@@ -150,14 +149,21 @@ export default makeStyles((theme) => ({
     position: "relative",
     alignItems: "center",
     padding: "2rem",
-    backgroundColor: "#FDE7E4 !important",
+    backgroundColor: "#FEF3F1 !important",
     position: "relative",
-    transition: "all 5s ease",
+    transition: "transform 100ms ease-in",
 
-    "& img": { width: "60%", margin: "0 auto",position: "absolute" ,top:'0.8rem'},
+    "& img": {
+      width: "60%",
+      margin: "0 auto",
+      position: "absolute",
+      top: "0.8rem",
+    },
 
-    "&:hover":{transform: 'scale(0.8) !important'},
-
+    "&:hover": {
+      transform: "scale(1.07)",
+      boxShadow: "0px 6px 18px -9px rgba(0,0,0,0.75)",
+    },
   },
   card2: {
     display: "flex",
@@ -165,11 +171,20 @@ export default makeStyles((theme) => ({
     position: "relative",
     alignItems: "center",
     padding: "2rem",
-    backgroundColor: "#FDE7E4 !important",
+    backgroundColor: "#FDFAEB !important",
     position: "relative",
+    transition: "transform 100ms ease-in",
 
-    "& img": { width: "60%", margin: "0 auto",position: "absolute" ,top:'0.8rem'},
-
+    "& img": {
+      width: "60%",
+      margin: "0 auto",
+      position: "absolute",
+      top: "0.8rem",
+    },
+    "&:hover": {
+      transform: "scale(1.07)",
+      boxShadow: "0px 6px 18px -9px rgba(0,0,0,0.75)",
+    },
   },
   card3: {
     display: "flex",
@@ -177,18 +192,46 @@ export default makeStyles((theme) => ({
     position: "relative",
     alignItems: "center",
     padding: "2rem",
-    backgroundColor: "#FDE7E4 !important",
+    backgroundColor: "#EDEFFC !important",
+    transition: "transform 100ms ease-in",
     position: "relative",
 
-    "& img": { width: "60%", margin: "0 auto",position: "absolute" ,top:'0.8rem'},
-
+    "& img": {
+      width: "60%",
+      margin: "0 auto",
+      position: "absolute",
+      top: "0.8rem",
+    },
+    "&:hover": {
+      transform: "scale(1.07)",
+      boxShadow: "0px 6px 18px -9px rgba(0,0,0,0.75)",
+    },
   },
   circle: {
-    width: "9rem", height:'9rem',
-    display:'flex',
-    justifyContent: 'center',
-    marginTop:'1rem',
-    backgroundColor: "red",
+    width: "9rem",
+    height: "9rem",
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "1rem",
+    backgroundColor: "#FDC0BB",
+    borderRadius: "50%",
+  },
+  circle2: {
+    width: "9rem",
+    height: "9rem",
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "1rem",
+    backgroundColor: "#FDE8B1",
+    borderRadius: "50%",
+  },
+  circle3: {
+    width: "9rem",
+    height: "9rem",
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "1rem",
+    backgroundColor: "#AEACF7",
     borderRadius: "50%",
   },
 }));

@@ -134,7 +134,14 @@ const Home = () => {
       </section>
       <section className={classes.medicine}>
         <div className={classes.medicine_header}>
-          <Typography variant="h1">Popular Medicine</Typography>
+          <Typography
+            variant="h1"
+            fontWeight="bold"
+            fontSize="1.7rem"
+            color="#1C416B"
+          >
+            Popular Medicine
+          </Typography>
           <Button
             className={classes.buttonView}
             variant="contained"
@@ -146,16 +153,13 @@ const Home = () => {
         <hr className={classes.horizontal_line} />
 
         <div className={classes.medicine_card}>
-          <Card className={classes.card1} sx={{ maxWidth: 350 }}>
-
-            <div className={classes.circle}>
-              
-            </div>
+          <Card className={classes.card1} sx={{ maxWidth: 400 }}>
+            <div className={classes.circle}></div>
             <img src="\img\popular-medicine1.png" alt="medicine" />
             <CardContent>
               <Typography
                 textAlign="center"
-                marginTop='2rem'
+                marginTop="2rem"
                 gutterBottom
                 variant="h5"
                 component="div"
@@ -165,7 +169,9 @@ const Home = () => {
               <Typography
                 textAlign="center"
                 variant="body2"
-                color="text.secondary"
+                color="#D8D6FA"
+                fontSize="0.8rem"
+                marginBottom="0.4rem"
               >
                 Lizards lorem rem
               </Typography>
@@ -179,16 +185,13 @@ const Home = () => {
               </Typography>
             </CardContent>
           </Card>
-          <Card className={classes.card2} sx={{ maxWidth: 350 }}>
-
-            <div className={classes.circle}>
-              
-            </div>
+          <Card className={classes.card2} sx={{ maxWidth: 400 }}>
+            <div className={classes.circle2}></div>
             <img src="\img\popular-medicine2.png" alt="medicine" />
             <CardContent>
               <Typography
                 textAlign="center"
-                marginTop='2rem'
+                marginTop="2rem"
                 gutterBottom
                 variant="h5"
                 component="div"
@@ -198,30 +201,24 @@ const Home = () => {
               <Typography
                 textAlign="center"
                 variant="body2"
-                color="text.secondary"
+                color="#D8D6FA"
+                fontSize="0.8rem"
+                marginBottom="0.4rem"
               >
                 Lizards lorem rem
               </Typography>
-              <Typography
-                textAlign="center"
-                variant="h5"
-                color="text.secondary"
-                fontSize="1rem"
-              >
+              <Typography textAlign="center" variant="h5" fontSize="1rem">
                 $25/30 Pieces
               </Typography>
             </CardContent>
           </Card>
-          <Card className={classes.card3} sx={{ maxWidth: 350 }}>
-
-            <div className={classes.circle}>
-              
-            </div>
+          <Card className={classes.card3} sx={{ maxWidth: 400 }}>
+            <div className={classes.circle3}></div>
             <img src="\img\popular-medicine3.png" alt="medicine" />
             <CardContent>
               <Typography
                 textAlign="center"
-                marginTop='2rem'
+                marginTop="2rem"
                 gutterBottom
                 variant="h5"
                 component="div"
@@ -231,7 +228,9 @@ const Home = () => {
               <Typography
                 textAlign="center"
                 variant="body2"
-                color="text.secondary"
+                color="#D8D6FA"
+                fontSize="0.8rem"
+                marginBottom="0.4rem"
               >
                 Lizards lorem rem
               </Typography>
