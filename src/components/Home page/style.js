@@ -71,12 +71,20 @@ export default makeStyles((theme) => ({
     gridTemplateColumns: "1fr 1fr",
     marginTop: "6rem",
     // backgroundColor: "#a44be1",
+    [theme.breakpoints.down("md")]: {
+      gridTemplateColumns: "1fr",
+      justifyContent: "center",
+    },
   },
   services_box: {
     display: "flex",
     marginLeft: "1rem",
     gap: "1.2rem",
     padding: "2rem 1rem",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+      alignItems: "center",
+    },
     // backgroundColor: "#F99E94",
   },
 
@@ -120,6 +128,9 @@ export default makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    [theme.breakpoints.down("md")]: {
+      textAlign: "center",
+    },
   },
   // medicine section
   medicine: {},
@@ -142,6 +153,9 @@ export default makeStyles((theme) => ({
     justifyContent: "center",
     gap: "1.9rem",
     padding: "2rem",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+    },
   },
   card1: {
     display: "flex",
