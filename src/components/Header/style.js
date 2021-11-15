@@ -21,4 +21,7 @@ export default makeStyles((theme) => ({
     width: "40%",
     "& p:hover": { color: "blue" },
   },
+  menuIcon: {
+    
+  }
 }));
