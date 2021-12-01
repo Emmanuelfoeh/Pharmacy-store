@@ -116,9 +116,9 @@ const Home = () => {
           </Typography>
           <Typography
             color="#1C416B"
-            fontSize="3rem"
+            fontSize="3.5rem"
             fontWeight="bold"
-            width="70%"
+            // width="70%"
             variant="h4"
           >
             The Allrounder Pharmacy Store
@@ -153,7 +153,7 @@ const Home = () => {
         <hr className={classes.horizontal_line} />
 
         <div className={classes.medicine_card}>
-          <Card className={classes.card1} sx={{ maxWidth: 400 }}>
+          <Card className={classes.card1} sx={{}}>
             <div className={classes.circle}></div>
             <img src="\img\popular-medicine1.png" alt="medicine" />
             <CardContent>
@@ -173,7 +173,7 @@ const Home = () => {
                 fontSize="0.8rem"
                 marginBottom="0.4rem"
               >
-                Lizards lorem rem
+                cough, fever, migrain
               </Typography>
               <Typography
                 textAlign="center"
@@ -196,7 +196,7 @@ const Home = () => {
                 variant="h5"
                 component="div"
               >
-                Aspirin
+                Acetaminophen
               </Typography>
               <Typography
                 textAlign="center"
@@ -205,7 +205,7 @@ const Home = () => {
                 fontSize="0.8rem"
                 marginBottom="0.4rem"
               >
-                Lizards lorem rem
+                dry cough, fever, migrain
               </Typography>
               <Typography textAlign="center" variant="h5" fontSize="1rem">
                 $25/30 Pieces
@@ -223,7 +223,7 @@ const Home = () => {
                 variant="h5"
                 component="div"
               >
-                Aspirin
+                Naproxen
               </Typography>
               <Typography
                 textAlign="center"
@@ -232,7 +232,7 @@ const Home = () => {
                 fontSize="0.8rem"
                 marginBottom="0.4rem"
               >
-                Lizards lorem rem
+                cough, fever, migrain
               </Typography>
               <Typography
                 textAlign="center"
@@ -240,14 +240,37 @@ const Home = () => {
                 color="text.secondary"
                 fontSize="1rem"
               >
-                $25/30 Pieces
+                $15/30 Pieces
               </Typography>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      <section className={classes.about}>this is the about section</section>
+      <section className={classes.about}>
+        <div className={classes.about__text}>
+          <h5>ABOUT US</h5>
+          <h2>THE FUTURE OF PHARMACY</h2>
+          <article>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean.
+          </article>
+
+          <button>More about us</button>
+        </div>
+        <div className={classes.aboutImage}>
+          {/* <div className={classes.bigBall}></div> */}
+          <div >
+            <img className={classes.aboutImg1} src="\img\pharmacy-imgabout1.jpg" alt="aboutimage1" />
+          </div>
+
+          <div >
+            <img className={classes.aboutImg2} src="\img\pharmacy-imgabout2.jpg" alt="aboutimage2" />
+          </div>
+        </div>
+      </section>
 
       <section className={classes.medicine_serve}>
         medicine serve section

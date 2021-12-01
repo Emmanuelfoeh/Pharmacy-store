@@ -82,8 +82,16 @@ export default makeStyles((theme) => ({
     gap: "1.2rem",
     padding: "2rem 1rem",
     [theme.breakpoints.down("md")]: {
+      // flexDirection: "column",
+      justifyContent: "center",
+      marginLeft: "0",
+      order: "1",
+      gap: "2rem",
+    },
+    [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
       alignItems: "center",
+      backgroundColor: "red",
     },
     // backgroundColor: "#F99E94",
   },
@@ -121,6 +129,9 @@ export default makeStyles((theme) => ({
     flexDirection: "column",
     marginTop: "1.4rem",
     rowGap: "1.2rem",
+    [theme.breakpoints.down("md")]: {
+      marginTop: "0",
+    },
   },
 
   service_text: {
@@ -129,11 +140,16 @@ export default makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     [theme.breakpoints.down("md")]: {
-      textAlign: "center",
+      textAlign: "left",
+      marginLeft: "1rem",
     },
   },
   // medicine section
-  medicine: {},
+  medicine: {
+    // display: "flex",
+    // flexDirection: "column",
+    // alignItems: "center",
+  },
   medicine_header: {
     display: "flex",
     justifyContent: "space-between",
@@ -149,15 +165,18 @@ export default makeStyles((theme) => ({
     margin: "0 auto",
   },
   medicine_card: {
-    display: "flex",
+    display: "grid",
+    gridTemplateColumns: "20rem 20rem 20rem",
+    // width: "90%",
     justifyContent: "center",
-    gap: "1.9rem",
-    padding: "2rem",
+    columnGap: "3rem !important",
+    padding: "2rem 1rem",
     [theme.breakpoints.down("sm")]: {
-      flexDirection: "column",
+      gridTemplateColumns: "20rem",
     },
   },
   card1: {
+    // width: "30%",
     display: "flex",
     flexDirection: "column",
     position: "relative",
@@ -180,6 +199,7 @@ export default makeStyles((theme) => ({
     },
   },
   card2: {
+    // width:'18rem',
     display: "flex",
     flexDirection: "column",
     position: "relative",
@@ -201,6 +221,7 @@ export default makeStyles((theme) => ({
     },
   },
   card3: {
+    // width: "18rem",
     display: "flex",
     flexDirection: "column",
     position: "relative",
@@ -222,8 +243,8 @@ export default makeStyles((theme) => ({
     },
   },
   circle: {
-    width: "9rem",
-    height: "9rem",
+    width: "14rem",
+    height: "14rem",
     display: "flex",
     justifyContent: "center",
     marginTop: "1rem",
@@ -231,8 +252,8 @@ export default makeStyles((theme) => ({
     borderRadius: "50%",
   },
   circle2: {
-    width: "9rem",
-    height: "9rem",
+    width: "14rem",
+    height: "14rem",
     display: "flex",
     justifyContent: "center",
     marginTop: "1rem",
@@ -240,12 +261,40 @@ export default makeStyles((theme) => ({
     borderRadius: "50%",
   },
   circle3: {
-    width: "9rem",
-    height: "9rem",
+    width: "14rem",
+    height: "14rem",
     display: "flex",
     justifyContent: "center",
     marginTop: "1rem",
     backgroundColor: "#AEACF7",
     borderRadius: "50%",
+  },
+  about: {
+    display: "grid",
+    gridTemplateColumns: "1fr 2fr",
+    padding: "2rem",
+  },
+  about__text: {
+    backgroundColor: "gray",
+  },
+  aboutImage: {
+    display: "flex",
+    columnGap: "1rem",
+    justifyContent: "flex-end",
+    position: "relative",
+  },
+  aboutImg1: {
+    width: "19rem",
+    marginTop: "5rem",
+    position: "relative",
+    borderRadius: "0.8rem",
+    boxShadow: "0px 6px 18px -9px rgba(0,0,0,0.75)",
+  },
+  aboutImg2: {
+    width: "19rem",
+    position: "relative",
+    left: "1rem",
+    borderRadius: "0.8rem",
+    boxShadow: "0px 6px 18px -9px rgba(0,0,0,0.75)",
   },
 }));
