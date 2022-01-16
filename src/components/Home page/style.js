@@ -10,14 +10,21 @@ export default makeStyles((theme) => ({
   },
   //   intro-section
   intro_section: {
-    maxWidth: "83.3125rem",
+    // backgroundColor: "gray",
+    paddingTop: "4rem",
+    // backgroundColor:'green',
+  },
+  container: {
+    maxWidth: "69.5rem",
+    margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
-    backgroundColor: "#FEF3F2",
-    margin: "4rem 0",
-    padding: "5rem 1rem",
+    marginTop: "4rem",
+    // backgroundColor: "yellow",
+    // margin: "4rem 0",
+    // padding: "5rem 1rem",
   },
-  text_section_text: {},
+  intro_section_text: {},
   logo_div: {
     // display:'flex',
     "& span": { marginRight: "1rem" },
@@ -25,6 +32,7 @@ export default makeStyles((theme) => ({
 
   intro_section_img: {
     position: "relative",
+    // backgroundColor:'blue',
   },
   sideBall: {
     position: "absolute",
@@ -56,17 +64,20 @@ export default makeStyles((theme) => ({
   hero_img: {
     width: "100%",
     position: "absolute",
-    right: "-5rem",
+    right: "-7rem",
     zIndex: "3",
     overflow: "hidden",
     borderRadius: "20px",
   },
   heroImg: {
-    width: "100%",
+    width: "120%",
   },
 
   //   Service Section css
-  services: {
+  services: {},
+  services_container: {
+    width: "69.5rem",
+    margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
     marginTop: "6rem",
@@ -82,8 +93,16 @@ export default makeStyles((theme) => ({
     gap: "1.2rem",
     padding: "2rem 1rem",
     [theme.breakpoints.down("md")]: {
+      // flexDirection: "column",
+      justifyContent: "center",
+      marginLeft: "0",
+      order: "1",
+      gap: "2rem",
+    },
+    [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
       alignItems: "center",
+      backgroundColor: "red",
     },
     // backgroundColor: "#F99E94",
   },
@@ -121,19 +140,32 @@ export default makeStyles((theme) => ({
     flexDirection: "column",
     marginTop: "1.4rem",
     rowGap: "1.2rem",
+    [theme.breakpoints.down("md")]: {
+      marginTop: "0",
+    },
   },
 
   service_text: {
-    width: "85%",
+    width: "100%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    marginLeft: "1rem",
     [theme.breakpoints.down("md")]: {
-      textAlign: "center",
+      textAlign: "left",
+      marginLeft: "1rem",
     },
   },
   // medicine section
-  medicine: {},
+  medicine: {
+    // display: "flex",
+    // flexDirection: "column",
+    // alignItems: "center",
+  },
+  medicine_container:{
+width: "69.5rem",
+margin:'0 auto',
+  },
   medicine_header: {
     display: "flex",
     justifyContent: "space-between",
@@ -149,15 +181,18 @@ export default makeStyles((theme) => ({
     margin: "0 auto",
   },
   medicine_card: {
-    display: "flex",
+    display: "grid",
+    gridTemplateColumns: "20rem 20rem 20rem",
+    // width: "90%",
     justifyContent: "center",
-    gap: "1.9rem",
-    padding: "2rem",
+    columnGap: "3rem !important",
+    padding: "2rem 1rem",
     [theme.breakpoints.down("sm")]: {
-      flexDirection: "column",
+      gridTemplateColumns: "20rem",
     },
   },
   card1: {
+    // width: "30%",
     display: "flex",
     flexDirection: "column",
     position: "relative",
@@ -180,6 +215,7 @@ export default makeStyles((theme) => ({
     },
   },
   card2: {
+    // width:'18rem',
     display: "flex",
     flexDirection: "column",
     position: "relative",
@@ -201,6 +237,7 @@ export default makeStyles((theme) => ({
     },
   },
   card3: {
+    // width: "18rem",
     display: "flex",
     flexDirection: "column",
     position: "relative",
@@ -222,8 +259,8 @@ export default makeStyles((theme) => ({
     },
   },
   circle: {
-    width: "9rem",
-    height: "9rem",
+    width: "14rem",
+    height: "14rem",
     display: "flex",
     justifyContent: "center",
     marginTop: "1rem",
@@ -231,8 +268,8 @@ export default makeStyles((theme) => ({
     borderRadius: "50%",
   },
   circle2: {
-    width: "9rem",
-    height: "9rem",
+    width: "14rem",
+    height: "14rem",
     display: "flex",
     justifyContent: "center",
     marginTop: "1rem",
@@ -240,12 +277,64 @@ export default makeStyles((theme) => ({
     borderRadius: "50%",
   },
   circle3: {
-    width: "9rem",
-    height: "9rem",
+    width: "14rem",
+    height: "14rem",
     display: "flex",
     justifyContent: "center",
     marginTop: "1rem",
     backgroundColor: "#AEACF7",
     borderRadius: "50%",
+  },
+  about: {
+   
+  },
+
+  about__container:{
+    width: "69.5rem",
+    margin: "0 auto",
+     display: "grid",
+    gridTemplateColumns: "1fr 1.5fr",
+    padding: "2rem",
+  },
+  about__text: {
+    // backgroundColor: "gray",
+    marginRight: "4rem",
+  },
+  about__text__heading: {
+    color: "#FF827A",
+    fontSize: "1.5rem",
+  },
+  about__text__header: {
+    color: "#1B426A",
+    fontSize: "2.5rem",
+    fontWeight: "900",
+    fontFamily: "Roboto sans-serif",
+  },
+  about__text__article: {
+    color: "#8DA1B5",
+    fontSize: "1rem",
+    margin: "1rem 0",
+    backgroundColor: "green",
+  },
+  aboutImage: {
+    display: "flex",
+    columnGap: "1rem",
+    justifyContent: "flex-end",
+    position: "relative",
+    // backgroundColor:'red',
+  },
+  aboutImg1: {
+    width: "19rem",
+    marginTop: "5rem",
+    position: "relative",
+    borderRadius: "0.8rem",
+    boxShadow: "0px 6px 18px -9px rgba(0,0,0,0.75)",
+  },
+  aboutImg2: {
+    width: "19rem",
+    position: "relative",
+    left: "1rem",
+    borderRadius: "0.8rem",
+    boxShadow: "0px 6px 18px -9px rgba(0,0,0,0.75)",
   },
 }));

@@ -1,5 +1,6 @@
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import { Box } from '@mui/system';
+import MenuIcon from "@mui/icons-material/Menu";
 import React from 'react'
 
 import useStyle from './style';
@@ -21,6 +22,7 @@ const classes = useStyle()
             <Typography>Gallery</Typography>
             <Typography>Contact</Typography>
           </Box>
+        <MenuIcon className={classes.menuIcon}/>
         </Toolbar>
       </AppBar>
     );
